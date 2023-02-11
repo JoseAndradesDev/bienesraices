@@ -1,0 +1,30 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+@include m.tablet {
+    .iconos-nosotros{
+       @include m.grid(3,8rem);
+    }
+}
+@include m.telefono {
+    .iconos-nosotros{
+        column-gap: 3rem;
+    }
+}
+
+.icono{
+    padding: 2.5rem;
+    
+    text-align: center;
+    img{
+        height: 10rem;
+    }
+    h3{
+        text-transform: uppercase;
+    }
+    p{
+        text-align:center;
+        line-height: 1.2;
+    }
+}

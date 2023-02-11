@@ -1,0 +1,56 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.dark-mode{
+    background-color: darken(v.$grisOscuro,10) ;
+
+    p{
+        color: v.$gris;
+    }
+
+    a,h1,h2,h3,h4,h5{
+        color: v.$blanco !important;
+    }
+
+    span{
+        color: v.$amarillo !important;
+    }
+
+    .form{
+        legend{
+            color: v.$blanco !important;
+        }
+        label{
+            color: v.$gris !important;
+        }
+        input:not([type="submit"]),textarea,select{
+            background-color: v.$grisOscuro !important;
+            color: v.$gris;
+        }
+        p{
+            color: v.$blanco !important;
+        }
+    }
+
+    .resumen{
+        .icono{
+            filter: invert(100%);
+        }
+    }
+    
+
+    .anuncio{
+        background-color: v.$grisOscuro;
+        border: 1px solid  v.$grisOscuro;
+
+        
+        .icono{
+            filter: invert(100%);
+        }
+    }
+
+    .precio{
+        color: v.$verde;
+    }
+
+}

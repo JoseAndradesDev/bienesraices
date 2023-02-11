@@ -1,0 +1,68 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+@include m.tablet {
+    .contenedor-anuncios{
+       @include m.grid(3,2rem);
+    }
+}
+
+.anuncio{
+    background-color: lighten(v.$gris, 5) ;
+    border: 1px solid lighten(v.$grisOscuro, 60);
+    margin-bottom: 2rem;
+
+    .contenido-anuncios{
+        padding: 2rem; 
+    }
+
+    h3,p{
+        margin: 0;
+    }
+    h3{
+        font-weight: v.$regular;
+    }
+    p{
+        font-weight: v.$delgada;
+        line-height: 1.4;
+        margin-bottom: 2rem;
+    }
+    .precio{
+        font-weight: v.$black;
+    }
+}
+
+.precio{
+    color: v.$verde;
+    font-weight: v.$black;
+    font-size: 3rem;
+}
+
+.iconos-info{
+    max-width: 30rem;
+    display: flex;
+    list-style: none;
+    margin-left: -6rem;
+    
+
+    li{
+        flex:1;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+
+        img{
+            flex: 0 0 3rem;
+            margin-right: -1.3rem;
+            
+        }
+
+        p{
+            font-weight: v.$black;
+            margin-bottom: 0;
+            margin-right: 2rem;
+        }
+    }
+}
+

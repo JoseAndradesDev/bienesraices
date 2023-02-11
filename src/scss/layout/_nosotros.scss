@@ -1,0 +1,24 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.nosotros-contenido{
+    @include m.tablet {
+        display: flex;
+        align-items: center;
+        column-gap: 4rem;
+
+        img{
+            width: 60rem;
+        }
+    }
+
+    h4{
+        color: v.$grisOscuro;
+    }
+
+}
+
+.sobrenosotros{
+    margin-top: 7rem;
+}
+

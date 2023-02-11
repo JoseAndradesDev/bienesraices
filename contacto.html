@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BienesRaices</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,700&display=swap" rel="stylesheet">
+
+    <!--LLamar a el archivo sass compilado a css-->
+    <link rel="stylesheet" href="build/css/app.css">
+
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="contenedor contenido-header">
+
+            <div class="barra">
+
+                <a href="index.html" class="logo-nav">
+                    <img src="build/img/logo.svg" alt="Logo de la empresa">
+                </a>
+
+                <div class="menu-hamburguesa">
+                    <img src="build/img/barras.svg" alt="menu desplegable">
+                </div>
+
+                <div class="derecha">
+
+                    <img class="btn-darkmode" src="build/img/dark-mode.svg" alt="boton modo oscuro">
+
+                    <nav class="navbar">
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="anuncios.html">Anuncios</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contacto.html">Contacto</a>
+                    </nav>
+
+                </div>
+
+            </div>
+            <!--barra-->
+
+        </div>
+    </header>
+
+    <main class="contenedor seccion contenido-centrado">
+        <h1>Contacto</h1>
+
+        <picture>
+            <source srcset="build/img/destacada3.webp" type="img/webp">
+            <img loading="lazy" src="build/img/destacada3.jpg" alt="">
+        </picture>
+
+        <h2>Rellene el formulario de contacto</h2>
+
+        <form class="form">
+
+            <fieldset>
+                <legend>Información Personal</legend>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="tu nombre" id="nombre">
+
+                <label for="email">Email</label>
+                <input type="email" placeholder="tu email" id="email">
+
+                <label for="tfn">Teléfono</label>
+                <input type="tel" placeholder="tu teléfono" id="tfn">
+
+                <label for="msj">Mensaje</label>
+                <textarea id="msj"></textarea>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Información sobre la propiedad</legend>
+
+                <label for="opc">¿Compra o venta?</label>
+                <select id="opc">
+                    <option value="" disabled selected>--Selecciona--</option>
+                    <option value="compra">Compra</option>
+                    <option value="venta">Venta</option>
+                </select>
+
+                <label for="presupuesto">Precio o Presupuesto</label>
+                <input type="number" placeholder="tu precio o presupuesto" id="presupuesto">
+
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Información de contacto</legend>
+
+                <p>Como desea ser contactado</p>
+
+                <div class="forma-contacto">
+
+                    <label for="contactar-tfn">Teléfono</label>
+                    <input name="forma-contacto" type="radio" value="teléfono" id="contacto-tfn">
+
+                    <label for="contactar-email">Email</label>
+                    <input name="forma-contacto" type="radio" value="email" id="contacto-email">
+    
+                </div>
+
+                <p>Si eligio teléfono seleciona fecha y hora para ser contactado</p>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha">
+
+                    <label for="hora">Hora</label>
+                    <input type="time" id="hora" min="09:00" max="18:00">
+
+            </fieldset>
+
+            <input type="submit" value="enviar" class="btn-verde">
+
+        </form>
+    </main>
+
+    <footer class="footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navbar">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+
+        <p class="copyright">Todos los Derechos Reservados 2022 &copy;</p>
+    </footer>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+
+</html>
